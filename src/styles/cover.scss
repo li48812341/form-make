@@ -1,0 +1,148 @@
+.fm-form{
+
+  .el-radio+.el-radio{
+    margin-left: 0 !important;
+  }
+  .el-radio{
+    margin-right: 30px;
+    
+  }
+  .el-checkbox+.el-checkbox{
+    margin-left: 0 !important;
+  }
+  .ant-checkbox-wrapper+.ant-checkbox-wrapper{
+    margin-left: 0 !important;
+  }
+  .el-checkbox{
+    margin-right: 30px;
+  }
+  .el-form-item--medium{
+    &.el-form-item{
+      margin-bottom: 22px;
+    } 
+  }
+  .el-form-item--small{
+    .el-radio{
+      line-height: 32px !important;
+    }
+  
+    .el-checkbox{
+      line-height: 32px !important;
+    }
+  
+    .el-rate{
+      margin-top: 6px;
+    }
+  }
+  .el-form-item--mini{
+    .el-radio{
+      line-height: 28px !important;
+    }
+  
+    .el-checkbox{
+      line-height: 28px !important;
+    }
+  
+    .el-rate{
+      margin-top: 4px;
+    }
+  }
+  .el-form-item--medium{
+    .el-radio{
+      line-height: 36px !important;
+    }
+  
+    .el-checkbox{
+      line-height: 36px !important;
+    }
+  
+    .el-rate{
+      margin-top: 8px;
+    }
+  }
+  
+  .border-form{
+    border: 1px solid #999;
+  
+    .el-table--border td, .el-table--border th, .el-table__body-wrapper .el-table--border.is-scrolling-left~.el-table__fixed{
+      border-right: 1px solid #999;
+    }
+  
+    .el-table td, .el-table th.is-leaf{
+      border-bottom: 1px solid #999;
+    }
+  
+    .el-table--border, .el-table--group{
+      border: 1px solid #999;
+    }
+  
+    .form-table{
+      margin:-5px;
+  
+      .el-form-item__content{
+        &::before{
+          display: none;
+        }
+      }
+    }
+  
+    .el-form-item__content{
+      // border-left: 1px solid #ccc;
+      &::before{
+        width: 1px;
+        background: #999;
+        display: block;
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: -300px;
+      }
+  
+      .el-form-item__error{
+        left: 5px;
+      }
+    }
+  
+    .no-label-form-item{
+      .el-form-item__content{
+        &::before{
+          background: transparent;
+        }
+      }
+    }
+  
+    &.el-form--label-top{
+      .el-form-item__content{
+        &::before{
+          background: transparent;
+        }
+      }
+    }
+  
+    .el-row+.el-row{
+      border-top: 1px solid #999;
+    }
+  
+    .el-col+.el-col{
+      border-left: 1px solid #999;
+    }
+  
+    .el-col{
+      overflow: hidden;
+    }
+  
+    .el-form-item__content{
+      padding: 5px;
+      padding-bottom: 0;
+    }
+  
+    .el-form-item__label{
+      padding: 5px;
+    }
+  }
+  
+  .el-slider__button-wrapper{
+    z-index: 101;
+  }
+}
