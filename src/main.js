@@ -24,9 +24,19 @@ Vue.use(VueI18n)
 
 Vue.prototype.$http = axios
 
-Vue.locale('en-US', {...enLocale})
-Vue.locale('zh-CN', {...zhLocale})
-// Vue.config.lang = 'en-US'
+// Vue.locale('en-US', {...enLocale})
+// Vue.locale('zh-CN', {...zhLocale})
+
+
+const i18n = new VueI18n({
+  locale: 'zh-CN',    // 语言标识
+  //this.$i18n.locale // 通过切换locale的值来实现语言切换
+  messages: {
+    'zh-CN': {...zhLocale},   // 中文语言包
+    'en-US': {...enLocale}   // 英文语言包
+  }
+})
+Vue.config.lang = 'en-US'
 
 import FormMaking from './index'
 Vue.use(FormMaking, {
@@ -45,6 +55,7 @@ Vue.use(FormMaking, {
 Vue.config.productionTip = false
 
 new Vue({
+  i18n,
   router,
   render: h => h(App)
 }).$mount('#app')

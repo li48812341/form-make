@@ -29,6 +29,7 @@
     "@antv/g2": "^4.1.32",
     "axios": "^0.18.0",
     "clipboard": "^2.0.1",
+    "core-js": "^3.27.2",
     "element-ui": "^2.13.2",
     "lodash": "^4.17.15",
     "moment": "^2.28.0",
@@ -46,6 +47,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.0.1",
+    "@kazupon/vue-i18n-loader": "^0.5.0",
     "@types/ace": "0.0.42",
     "@vue/cli-plugin-babel": "^3.0.0",
     "@vue/cli-plugin-eslint": "^3.0.0",
